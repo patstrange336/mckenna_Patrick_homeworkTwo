@@ -1,0 +1,68 @@
+
+* {
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+nav #hamburger, div {
+    display:flex;
+    background-color: #5C33FF;
+    height:100px;
+    position:relative;
+    justify-content: space-around;
+    align-items:center;
+}
+
+
+nav a {
+    color:#fff;
+    text-decoration: none;
+}
+
+nav #hamburger .magic a {
+    color:#fff;
+    display:block;
+}
+
+
+nav #hamburger {
+    color:#fff;
+    display:none;
+}
+
+
+
+@media all and (max-width:800px){
+
+    nav #hamburger, div {
+        flex-direction:column;
+        height:110px;
+    }
+
+    nav .magic a {
+        display:none;
+    }
+
+    nav #hamburger {
+        height:10%;
+        text-align: center;
+        display:block;
+    }
+    
+    
+    nav #hamburger:hover + .magic a{
+        display: block;
+    }
+    
+    
+}
+
